@@ -1,0 +1,123 @@
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
+
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  &__link {
+    position: relative;
+    padding-bottom: 32px;
+    padding-top: 32px;
+    font-weight: 500;
+    line-height: 1.2px;
+    letter-spacing: 0.02em;
+    color: $color-two;
+  }
+
+  &__link--current {
+    color: $color-three;
+  }
+
+  &__link--current::after {
+    position: absolute;
+    content: '';
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background: $color-three;
+  }
+
+  &__mail-link,
+  &__phone-link {
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: $main-color;
+    fill: $main-color;
+  }
+
+  &__mail-link {
+    margin-left: 318px;
+  }
+
+  &__phone-link {
+    margin-left: 30px;
+  }
+
+  &__mail-link:hover,
+  &__mail-link:focus,
+  &__phone-link:hover,
+  &__phone-link:focus {
+    -webkit-transition-property: fill, color;
+    transition-property: fill, color;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transition-duration: 250ms;
+    transition-duration: 250ms;
+    fill: $color-three;
+    color: $color-three;
+  }
+
+  &__mail-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  &__phone-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  &__mail-icon {
+    margin-right: 10px;
+  }
+
+  &__phone-icon {
+    margin-right: 10px;
+  }
+}
+
+.header__nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 0;
+  margin-left: 93px;
+
+  li {
+    margin-left: 50px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transition-duration: 250ms;
+    transition-duration: 250ms;
+    color: $color-three;
+  }
+}

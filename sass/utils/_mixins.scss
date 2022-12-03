@@ -1,0 +1,18 @@
+@mixin section-header {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    color: $color-two;
+}
+
+@mixin buttons {
+    font-weight: 700;
+    font-size: 16px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: $background-main;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px $hero-button-submit;
+}

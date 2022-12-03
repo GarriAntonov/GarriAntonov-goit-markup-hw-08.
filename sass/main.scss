@@ -1,0 +1,76 @@
+// Variables import
+@import 'utils/vars';
+
+// Mixins import
+@import 'utils/mixins';
+
+// Components import
+@import 'components/header';
+@import 'components/hero';
+@import 'components/benefits';
+@import 'components/our-activities';
+@import 'components/team';
+@import 'components/clients';
+@import 'components/works';
+@import 'components/footer';
+@import 'components/logo';
+
+body {
+  font-family: $prime-text;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+body ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+a {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.social__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  padding-left: 0;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.socials__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  padding-left: 0;
+}
