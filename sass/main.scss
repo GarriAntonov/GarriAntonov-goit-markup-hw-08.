@@ -15,6 +15,12 @@
 @import 'components/footer';
 @import 'components/logo';
 
+// Media import
+
+// @import 'media/mobile';
+@import 'media/tablet';
+@import 'media/desktop';
+
 body {
   font-family: $prime-text;
   font-style: normal;
@@ -49,29 +55,10 @@ img {
 }
 
 .container {
-  max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-}
-
-@media screen and (min-width: 480px) {
-  .container {
-    width: 480px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1440px;
-  }
 }
 
 .social__list {
@@ -83,12 +70,4 @@ img {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-}
-
-.socials__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 10px;
-  padding-left: 0;
 }

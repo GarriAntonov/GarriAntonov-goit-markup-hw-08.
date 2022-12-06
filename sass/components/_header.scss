@@ -37,8 +37,18 @@
     background: $color-three;
   }
 
+  &__contacts {
+    display: flex;
+  }
+
   &__mail-link,
   &__phone-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
@@ -47,7 +57,6 @@
   }
 
   &__mail-link {
-    margin-left: 318px;
   }
 
   &__phone-link {
@@ -66,24 +75,6 @@
     transition-duration: 250ms;
     fill: $color-three;
     color: $color-three;
-  }
-
-  &__mail-link {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-
-  &__phone-link {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
   }
 
   &__mail-icon {

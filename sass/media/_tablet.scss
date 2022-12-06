@@ -1,0 +1,20 @@
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .header__contacts {
+    flex-direction: column;
+    margin-left: 95px;
+  }
+
+  .header__mail-link {
+    margin-bottom: 10px;
+  }
+
+  .header__phone-link {
+    margin-left: 0;
+  }
+}

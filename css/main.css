@@ -33,15 +33,23 @@
   border-radius: 2px;
   background: #2196f3;
 }
+.header__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 .header__mail-link, .header__phone-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #757575;
   fill: #757575;
-}
-.header__mail-link {
-  margin-left: 318px;
 }
 .header__phone-link {
   margin-left: 30px;
@@ -55,22 +63,6 @@
   transition-duration: 250ms;
   fill: #2196f3;
   color: #2196f3;
-}
-.header__mail-link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-.header__phone-link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 .header__mail-icon {
   margin-right: 10px;
@@ -874,6 +866,34 @@ textarea {
   margin-bottom: 25px;
 }
 
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .header__contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 95px;
+  }
+  .header__mail-link {
+    margin-bottom: 10px;
+  }
+  .header__phone-link {
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+  .header__contacts {
+    margin-left: 318px;
+  }
+}
 body {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -908,28 +928,12 @@ img {
 }
 
 .container {
-  max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
 
-@media screen and (min-width: 480px) {
-  .container {
-    width: 480px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1440px;
-  }
-}
 .social__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -939,12 +943,4 @@ img {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-}
-
-.socials__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 10px;
-  padding-left: 0;
 }/*# sourceMappingURL=main.css.map */
