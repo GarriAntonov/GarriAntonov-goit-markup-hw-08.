@@ -1,20 +1,115 @@
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
+    width: 768px;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
+  .header {
+    padding-top: 21px;
+    padding-bottom: 18px;
+
+    &__nav-list {
+      margin-left: 88px;
+    }
+  }
+
   .header__contacts {
     flex-direction: column;
-    margin-left: 95px;
+    margin-left: 72px;
   }
 
   .header__mail-link {
     margin-bottom: 10px;
+    margin-left: -3px;
   }
 
   .header__phone-link {
     margin-left: 0;
+  }
+
+  .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        color-stop(50%, rgba(47, 48, 58, 0.4)),
+        color-stop(50%, rgba(47, 48, 58, 0.4))
+      ),
+      url(../../images/tablet-img/Header\ img\ -1x.jpg);
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4) 50%,
+        rgba(47, 48, 58, 0.4) 50%
+      ),
+      url(../../images/tablet-img/Header\ img\ -1x.jpg);
+    width: 768px;
+
+    &__title {
+      font-size: 26px;
+      line-height: 1.62;
+      width: 360px;
+      height: 84px;
+    }
+
+    &__button {
+      padding: 10px 24px;
+    }
+  }
+
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .benefits {
+    &__item {
+      width: 354px;
+    }
+
+    &__svg-antenna,
+    &__svg-clock,
+    &__svg-comp,
+    &__svg-man {
+      width: 70px;
+      height: 70px;
+    }
+
+    &__list {
+      flex-wrap: wrap;
+    }
+
+    &__svg {
+      width: 354px;
+      padding: 25px 142px;
+    }
+  }
+
+  .our-activities {
+    display: none;
+  }
+
+  .team {
+    &__title {
+      font-size: 28px;
+      line-height: 1.2;
+      margin-bottom: 30px;
+    }
+
+    &__item {
+      width: 354px;
+    }
+
+    &__list {
+      flex-wrap: wrap;
+    }
+
+    &__img {
+      width: 100%;
+    }
   }
 }

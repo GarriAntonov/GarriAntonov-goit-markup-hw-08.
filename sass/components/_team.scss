@@ -2,6 +2,11 @@
   background-color: $color-four;
 }
 
+.team__title {
+  @include section-header;
+  margin-bottom: 50px;
+}
+
 .team__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9,6 +14,10 @@
   gap: 30px;
   padding-left: 0;
   background-color: $color-four;
+}
+
+.team__img {
+  width: 270px;
 }
 
 .team__item {
@@ -23,11 +32,6 @@
 
 .team__list img {
   margin-bottom: 30px;
-}
-
-.team__title {
-  @include section-header;
-  margin-bottom: 50px;
 }
 
 .team__name {
