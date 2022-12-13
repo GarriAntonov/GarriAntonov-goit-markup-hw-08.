@@ -1,8 +1,31 @@
 @media screen and (min-width: 480px) {
-  // .container {
-  //   width: 480px;
-  // }
+  .container {
+    max-width: 480px;
+  }
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
+  .header {
+    &__nav-list {
+      display: none;
+    }
+
+    &__contacts {
+      display: none;
+    }
+  }
+
+  .hero {
+    width: 100%;
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, $img-overlay)),
+      color-stop(50%, $img-overlay), url(../../images/mobile-img/Header-img.jpg);
+
+    &__title {
+      width: 360px;
+      font-size: 26px;
+      line-height: 1.6;
+      margin-left: 60px;
+      margin-right: 60px;
+    }
+  }
 }
