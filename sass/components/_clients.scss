@@ -27,16 +27,52 @@
   border: 1px solid $color-fill-icon-clients;
   border-radius: 4px;
   color: $color-fill-icon-clients;
+}
 
-  &:hover,
-  &:focus {
-    -webkit-transition-property: border, color;
-    transition-property: border, color;
-    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    -webkit-transition-duration: 250ms;
-    transition-duration: 250ms;
-    color: $color-three;
-    border: 1px solid $color-three;
-  }
+.client__link:hover,
+.client__link:focus {
+  -webkit-transition-property: border, color;
+  transition-property: border, color;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-duration: 250ms;
+  transition-duration: 250ms;
+  color: $color-three;
+  border: 1px solid $color-three;
+}
+
+.icon-svg-1 {
+  width: 41px;
+  height: 47px;
+  fill: $color-fill-social-link;
+}
+
+.icon-svg-2 {
+  width: 40px;
+  height: 52px;
+  fill: $color-fill-social-link;
+}
+
+.icon-svg-3 {
+  width: 43px;
+  height: 41px;
+  fill: $color-fill-social-link;
+}
+
+.icon-svg-4 {
+  width: 84px;
+  height: 41px;
+  fill: $color-fill-social-link;
+}
+
+.icon-svg-5 {
+  width: 63px;
+  height: 45px;
+  fill: $color-fill-social-link;
+}
+
+.icon-svg-6 {
+  width: 94px;
+  height: 44px;
+  fill: $color-fill-social-link;
 }

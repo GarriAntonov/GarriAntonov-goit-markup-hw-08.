@@ -1,6 +1,6 @@
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
     margin-left: 0;
     margin-right: 0;
   }
@@ -111,5 +111,96 @@
     &__img {
       width: 100%;
     }
+  }
+
+  .clients__tytle {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.2;
+    margin-bottom: 30px;
+  }
+
+  .clients__list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .clients__item {
+  }
+
+  .client__link {
+    width: 226px;
+    color: $color-fill-icon-clients;
+    fill: $color-fill-icon-clients;
+
+    & :hover,
+    & :focus {
+      color: $color-three;
+      fill: $color-three;
+    }
+  }
+
+  .icon-svg-1 {
+    width: 44px;
+    height: 50px;
+  }
+
+  .icon-svg-2 {
+    width: 40px;
+    height: 52px;
+  }
+
+  .icon-svg-3 {
+    width: 41px;
+    height: 43px;
+  }
+
+  .icon-svg-4 {
+    width: 80px;
+    height: 42px;
+  }
+
+  .icon-svg-5 {
+    width: 59px;
+    height: 47px;
+  }
+
+  .icon-svg-6 {
+    width: 89px;
+    height: 45px;
+  }
+
+  .contaks {
+    text-align: center;
+    margin-right: 165px;
+  }
+
+  .logo {
+    font-size: 24px;
+    line-height: 1.7;
+    margin-bottom: 28px;
+  }
+
+  .footer__join {
+    text-align: center;
+  }
+
+  .footer__items {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer-action-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-button-submit {
+    margin-left: 0;
+    margin-top: 20px;
   }
 }
