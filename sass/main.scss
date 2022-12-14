@@ -22,6 +22,12 @@
 @import 'media/tablet';
 @import 'media/desktop';
 
+html,
+body {
+  min-width: 480px;
+  overflow-x: auto;
+}
+
 body {
   font-family: $prime-text;
   font-style: normal;

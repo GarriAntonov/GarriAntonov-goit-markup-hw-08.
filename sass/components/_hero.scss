@@ -4,7 +4,7 @@
   background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, $img-overlay)),
     color-stop(50%, $img-overlay), url(../images/img-bgp.jpg);
   background-image: linear-gradient(to right, $img-overlay 50%, $img-overlay 50%),
-    url(../images/img-bgp.jpg);
+    url(../images/img-hero-bg.jpg);
   background-color: $main-color;
   background-repeat: no-repeat;
   background-size: cover;
@@ -150,8 +150,6 @@
     fill: $color-three;
   }
 }
-
-
 
 .hero__icon-modal {
   position: absolute;
