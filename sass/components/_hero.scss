@@ -146,7 +146,7 @@
     outline: none;
   }
 
-  &:focus + &__icon-modal {
+  &:focus + .hero__icon-modal {
     fill: $color-three;
   }
 }

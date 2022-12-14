@@ -135,4 +135,33 @@
     margin-bottom: 20px;
     width: 100%;
   }
+
+  .hero {
+    &__modal {
+      width: 450px;
+    }
+
+    &__modal-form {
+      width: auto;
+      padding: 0 40px;
+    }
+
+    &__modal-text {
+      padding: 0 50px;
+    }
+
+    &__label-text {
+      font-size: 12px;
+    }
+
+    &__link-color {
+      font-size: 12px;
+    }
+
+    &__checkbox {
+      width: auto;
+      padding: 0 40px;
+      justify-content: flex-start;
+    }
+  }
 }

@@ -244,7 +244,7 @@
   border-color: #2196f3;
   outline: none;
 }
-.hero__input-property:focus + .hero__input-property__icon-modal {
+.hero__input-property:focus + .hero__icon-modal {
   fill: #2196f3;
 }
 
@@ -532,7 +532,7 @@ textarea {
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  color: #afb1b8;
+  fill: #afb1b8;
 }
 
 .client__link:hover,
@@ -543,44 +543,38 @@ textarea {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-transition-duration: 250ms;
   transition-duration: 250ms;
-  color: #2196f3;
   border: 1px solid #2196f3;
+  fill: #2196f3;
 }
 
 .icon-svg-1 {
   width: 41px;
   height: 47px;
-  fill: #afb1b8;
 }
 
 .icon-svg-2 {
   width: 40px;
   height: 52px;
-  fill: #afb1b8;
 }
 
 .icon-svg-3 {
   width: 43px;
   height: 41px;
-  fill: #afb1b8;
 }
 
 .icon-svg-4 {
   width: 84px;
   height: 41px;
-  fill: #afb1b8;
 }
 
 .icon-svg-5 {
   width: 63px;
   height: 45px;
-  fill: #afb1b8;
 }
 
 .icon-svg-6 {
   width: 94px;
   height: 44px;
-  fill: #afb1b8;
 }
 
 .works {
@@ -1044,6 +1038,29 @@ textarea {
   .footer-action__input {
     margin-bottom: 20px;
     width: 100%;
+  }
+  .hero__modal {
+    width: 450px;
+  }
+  .hero__modal-form {
+    width: auto;
+    padding: 0 40px;
+  }
+  .hero__modal-text {
+    padding: 0 50px;
+  }
+  .hero__label-text {
+    font-size: 12px;
+  }
+  .hero__link-color {
+    font-size: 12px;
+  }
+  .hero__checkbox {
+    width: auto;
+    padding: 0 40px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
