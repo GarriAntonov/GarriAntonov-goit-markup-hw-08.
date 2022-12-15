@@ -22,8 +22,8 @@
     max-width: 100%;
     padding-top: 118px;
     padding-bottom: 118px;
-    background-image: linear-gradient(to right, $img-overlay 50%, $img-overlay 50%),
-      url(../../images/mobile-img/img-hero-bg.jpg);
+    background-image: linear-gradient(to right, $img-overlay 50%),
+      url(../images/mobile-img/img-hero-bg.jpg);
 
     &__title {
       width: 360px;
@@ -31,6 +31,12 @@
       line-height: 1.6;
       margin-left: 60px;
       margin-right: 60px;
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/mobile-img/hero-bg-mob@2x.jpg);
     }
   }
 

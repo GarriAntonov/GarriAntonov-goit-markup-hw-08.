@@ -1,3 +1,9 @@
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
@@ -107,6 +113,11 @@
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+}
+@media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/desktop/Img-hero-bg-desk@2x.jpg);
+  }
 }
 .hero__title {
   font-weight: 900;
@@ -932,8 +943,8 @@ textarea {
     max-width: 100%;
     padding-top: 118px;
     padding-bottom: 118px;
-    background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, rgba(47, 48, 58, 0.4)), color-stop(50%, rgba(47, 48, 58, 0.4))), url(../../images/mobile-img/img-hero-bg.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 50%, rgba(47, 48, 58, 0.4) 50%), url(../../images/mobile-img/img-hero-bg.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, rgba(47, 48, 58, 0.4))), url(../images/mobile-img/img-hero-bg.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 50%), url(../images/mobile-img/img-hero-bg.jpg);
   }
   .hero__title {
     width: 360px;
@@ -942,6 +953,13 @@ textarea {
     margin-left: 60px;
     margin-right: 60px;
   }
+}
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/mobile-img/hero-bg-mob@2x.jpg);
+  }
+}
+@media screen and (max-width: 767px) {
   .benefits__svg-antenna {
     width: 65px;
     height: 70px;
@@ -972,13 +990,19 @@ textarea {
   .benefits__text {
     text-align: left;
   }
+}
+@media screen and (max-width: 767px) {
   .our-activities {
     display: none;
   }
+}
+@media screen and (max-width: 767px) {
   .team__title {
     font-size: 28px;
     margin-bottom: 30px;
   }
+}
+@media screen and (max-width: 767px) {
   .team__list {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -986,21 +1010,31 @@ textarea {
         -ms-flex-pack: center;
             justify-content: center;
   }
+}
+@media screen and (max-width: 767px) {
   .team__img {
     width: auto;
   }
+}
+@media screen and (max-width: 767px) {
   .clients__tytle {
     font-size: 28px;
     margin-bottom: 30px;
   }
+}
+@media screen and (max-width: 767px) {
   .clients__list {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+}
+@media screen and (max-width: 767px) {
   .client__link {
     margin-right: 0;
     width: 210px;
   }
+}
+@media screen and (max-width: 767px) {
   .footer__items {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1011,16 +1045,24 @@ textarea {
             align-items: center;
     text-align: center;
   }
+}
+@media screen and (max-width: 767px) {
   .contaks {
     margin-right: 0;
     margin-bottom: 60px;
   }
+}
+@media screen and (max-width: 767px) {
   .footer__join {
     margin-bottom: 60px;
   }
+}
+@media screen and (max-width: 767px) {
   .footer-action {
     margin-left: 0;
   }
+}
+@media screen and (max-width: 767px) {
   .footer-action-div {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1035,10 +1077,14 @@ textarea {
             justify-content: center;
     text-align: center;
   }
+}
+@media screen and (max-width: 767px) {
   .footer-action__input {
     margin-bottom: 20px;
     width: 100%;
   }
+}
+@media screen and (max-width: 767px) {
   .hero__modal {
     width: 450px;
   }
@@ -1069,6 +1115,9 @@ textarea {
     margin-left: 0;
     margin-right: 0;
   }
+  .container .logo {
+    margin-bottom: 0;
+  }
   .header {
     padding-top: 21px;
     padding-bottom: 18px;
@@ -1097,19 +1146,32 @@ textarea {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 50%, rgba(47, 48, 58, 0.4) 50%), url(../../images/tablet-img/img-hero-bg.jpg);
     width: 768px;
   }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/tablet-img/hero-img-bg-tab@2x.jpg);
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
   .hero__title {
     font-size: 26px;
     line-height: 1.62;
     width: 360px;
     height: 84px;
   }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
   .hero__button {
     padding: 10px 24px;
   }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
   .section {
     padding-top: 60px;
     padding-bottom: 60px;
   }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
   .benefits__item {
     width: 354px;
   }
@@ -1125,9 +1187,13 @@ textarea {
     width: 354px;
     padding: 25px 142px;
   }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
   .our-activities {
     display: none;
   }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
   .team__title {
     font-size: 28px;
     line-height: 1.2;
@@ -1143,12 +1209,16 @@ textarea {
   .team__img {
     width: 100%;
   }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
   .clients__tytle {
     font-weight: 700;
     font-size: 28px;
     line-height: 1.2;
     margin-bottom: 30px;
   }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
   .clients__list {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1156,6 +1226,8 @@ textarea {
         -ms-flex-pack: center;
             justify-content: center;
   }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
   .client__link {
     width: 226px;
     color: #afb1b8;
@@ -1165,42 +1237,62 @@ textarea {
     color: #2196f3;
     fill: #2196f3;
   }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
   .icon-svg-1 {
     width: 44px;
     height: 50px;
   }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
   .icon-svg-2 {
     width: 40px;
     height: 52px;
   }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
   .icon-svg-3 {
     width: 41px;
     height: 43px;
   }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
   .icon-svg-4 {
     width: 80px;
     height: 42px;
   }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
   .icon-svg-5 {
     width: 59px;
     height: 47px;
   }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
   .icon-svg-6 {
     width: 89px;
     height: 45px;
   }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
   .contaks {
     text-align: center;
     margin-right: 165px;
   }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
   .logo {
     font-size: 24px;
     line-height: 1.7;
     margin-bottom: 28px;
   }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
   .footer__join {
     text-align: center;
   }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
   .footer__items {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1214,6 +1306,8 @@ textarea {
         -ms-flex-pack: center;
             justify-content: center;
   }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
   .footer-action-div {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1227,6 +1321,8 @@ textarea {
             align-items: center;
     text-align: center;
   }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
   .footer-button-submit {
     margin-left: 0;
     margin-top: 20px;

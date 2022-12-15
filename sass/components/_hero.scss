@@ -5,6 +5,9 @@
     color-stop(50%, $img-overlay), url(../../images/desktop/img-hero-bg.jpg);
   background-image: linear-gradient(to right, $img-overlay 50%, $img-overlay 50%),
     url(../../images/desktop/img-hero-bg.jpg);
+  @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/desktop/Img-hero-bg-desk@2x.jpg);
+  }
   background-color: $main-color;
   background-repeat: no-repeat;
   background-size: cover;
