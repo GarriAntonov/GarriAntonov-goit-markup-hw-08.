@@ -18,6 +18,22 @@
     }
   }
 
+  .mobile-menu-button {
+    position: absolute;
+    top: 22px;
+    right: 22px;
+    background-color: transparent;
+    border: none;
+  }
+
+  .mobile-menu-button .icon-cross {
+    display: none;
+  }
+
+  .mobile-menu-button.is-open .icon-cross {
+    display: block;
+  }
+
   .hero {
     max-width: 100%;
     padding-top: 118px;

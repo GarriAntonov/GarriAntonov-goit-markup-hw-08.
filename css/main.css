@@ -939,6 +939,19 @@ textarea {
   .header__contacts {
     display: none;
   }
+  .mobile-menu-button {
+    position: absolute;
+    top: 22px;
+    right: 22px;
+    background-color: transparent;
+    border: none;
+  }
+  .mobile-menu-button .icon-cross {
+    display: none;
+  }
+  .mobile-menu-button.is-open .icon-cross {
+    display: block;
+  }
   .hero {
     max-width: 100%;
     padding-top: 118px;
@@ -1141,6 +1154,9 @@ textarea {
   .header__phone-link {
     margin-left: 0;
   }
+  .mobile-menu-button {
+    display: none;
+  }
   .hero {
     padding-top: 118px;
     padding-bottom: 118px;
@@ -1338,6 +1354,9 @@ textarea {
   }
   .header__contacts {
     margin-left: 318px;
+  }
+  .mobile-menu-button {
+    display: none;
   }
 }
 html,
