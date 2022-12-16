@@ -55,6 +55,8 @@
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: url(../images/tablet-img/hero-img-bg-tab@2x.jpg);
+      background-image: linear-gradient(to right, $img-overlay 50%),
+        url(../images/mobile-img/img-hero-bg.jpg);
     }
 
     &__title {
