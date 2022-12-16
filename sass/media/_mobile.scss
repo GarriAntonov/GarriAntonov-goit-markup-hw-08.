@@ -30,8 +30,12 @@
     display: none;
   }
 
-  .mobile-menu-button.is-open .icon-cross {
+  .mobile-menu-button.is-open .icon-menu {
     display: block;
+  }
+
+  .mobile-menu-button.is-open .icon-cross {
+    display: none;
   }
 
   .hero {
