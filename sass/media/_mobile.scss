@@ -9,6 +9,7 @@
   }
 
   .header {
+    position: relative;
     &__nav-list {
       display: none;
     }
@@ -18,24 +19,12 @@
     }
   }
 
-  .mobile-menu-button {
+  .menu-toggle {
     position: absolute;
     top: 22px;
     right: 22px;
-    background-color: transparent;
     border: none;
-  }
-
-  .mobile-menu-button .icon-cross {
-    display: none;
-  }
-
-  .mobile-menu-button.is-open .icon-menu {
-    display: block;
-  }
-
-  .mobile-menu-button.is-open .icon-cross {
-    display: none;
+    background: transparent;
   }
 
   .hero {
