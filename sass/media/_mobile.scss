@@ -1,7 +1,12 @@
 @media screen and (max-width: 767px) {
   .container {
     position: relative;
-    max-width: 480px;
+  }
+
+  .menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
   }
 
   .section {
@@ -27,11 +32,9 @@
       url(../images/mobile-img/img-hero-bg.jpg);
 
     &__title {
-      width: 360px;
+      width: auto;
       font-size: 26px;
       line-height: 1.6;
-      margin-left: 60px;
-      margin-right: 60px;
     }
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -64,14 +67,12 @@
     }
 
     &__svg {
-      width: 450px;
-      height: 120px;
-      margin-left: auto;
-      margin-right: auto;
+      width: 100%;
     }
 
     &__list {
       flex-wrap: wrap;
+      justify-content: center;
       text-align: center;
     }
 
@@ -105,6 +106,7 @@
 
   .clients__list {
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   .client__link {

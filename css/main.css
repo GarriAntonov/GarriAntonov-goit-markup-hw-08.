@@ -110,9 +110,6 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
   text-align: center;
 }
 @media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -1037,9 +1034,7 @@ textarea {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 32px;
-  padding-left: 40px;
   padding-top: 48px;
-  padding-bottom: 306px;
 }
 
 .mobile-menu__link-blue {
@@ -1079,6 +1074,7 @@ textarea {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 32px;
+  padding-left: 0;
 }
 
 .mobile-contacts-link-blue {
@@ -1103,6 +1099,7 @@ textarea {
   display: -ms-flexbox;
   display: flex;
   gap: 20px;
+  padding-left: 0;
 }
 
 .mobile-socials-link {
@@ -1116,7 +1113,15 @@ textarea {
 @media screen and (max-width: 767px) {
   .container {
     position: relative;
-    max-width: 480px;
+  }
+  .menu-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: distribute;
+        align-content: space-around;
   }
   .section {
     padding-top: 60px;
@@ -1136,11 +1141,9 @@ textarea {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 50%), url(../images/mobile-img/img-hero-bg.jpg);
   }
   .hero__title {
-    width: 360px;
+    width: auto;
     font-size: 26px;
     line-height: 1.6;
-    margin-left: 60px;
-    margin-right: 60px;
   }
 }
 @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
@@ -1167,14 +1170,14 @@ textarea {
     height: 70px;
   }
   .benefits__svg {
-    width: 450px;
-    height: 120px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
   }
   .benefits__list {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-align: center;
   }
   .benefits__text {
@@ -1216,6 +1219,9 @@ textarea {
   .clients__list {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 @media screen and (max-width: 767px) {
@@ -1522,6 +1528,11 @@ textarea {
     margin-top: 20px;
   }
 }
+@media (min-width: 768px) and (max-width: 1199px) {
+  .footer-action {
+    margin-left: 0;
+  }
+}
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
@@ -1535,7 +1546,7 @@ textarea {
 }
 html,
 body {
-  min-width: 480px;
+  min-width: 320px;
   overflow-x: auto;
 }
 
