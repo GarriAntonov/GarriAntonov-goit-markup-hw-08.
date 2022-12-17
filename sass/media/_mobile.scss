@@ -37,9 +37,8 @@
     @media screen and (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/mobile-img/hero-bg-mob@2x.jpg);
       background-image: linear-gradient(to right, $img-overlay 50%),
-        url(../images/mobile-img/img-hero-bg.jpg);
+        url(../images/mobile-img/hero-bg-mob@2x.jpg);
     }
   }
 
