@@ -23,17 +23,26 @@
       <div class="container">
         <p class="logo"><span class="logo-web">Web</span>Studio</p>
         <nav class="header__nav">
-          <button class="menu-toggle js-close-menu">
-            <svg
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-              width="40"
-              height="40"
-            >
+          <button class="menu-toggle js-open-menu">
+            <svg width="40" height="40">
               <use href="./images/symbol-defs.svg#menu_40px"></use>
             </svg>
           </button>
+
+          <div class="menu-container js-menu-container" id="mobile-menu">
+            <button class="menu-toggle js-close-menu">
+              <svg width="40" height="40">
+                <use href="./images/symbol-defs.svg#close_40px"></use>
+              </svg>
+            </button>
+
+            <ul class="mobile-menu">
+              <li><a href="" class="link">About</a></li>
+              <li><a href="" class="link">Products</a></li>
+              <li><a href="" class="link">Contacts</a></li>
+              <li><a href="" class="link">Career</a></li>
+            </ul>
+          </div>
 
           <ul class="header__nav-list">
             <li>
@@ -741,27 +750,6 @@
         </div>
       </div>
     </footer>
-
-    <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="menu-toggle js-close-menu">
-        <svg
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-          width="40"
-          height="40"
-        >
-          <use href="./images/symbol-defs.svg#close_40px"></use>
-        </svg>
-      </button>
-
-      <ul class="mobile-menu">
-        <li><a href="" class="link">About</a></li>
-        <li><a href="" class="link">Products</a></li>
-        <li><a href="" class="link">Contacts</a></li>
-        <li><a href="" class="link">Career</a></li>
-      </ul>
-    </div>
 
     <script src="./js/modal.js"></script>
     <script

@@ -1,5 +1,6 @@
 @media screen and (max-width: 767px) {
   .container {
+    position: relative;
     max-width: 480px;
   }
 
@@ -9,7 +10,6 @@
   }
 
   .header {
-    position: relative;
     &__nav-list {
       display: none;
     }
@@ -17,14 +17,6 @@
     &__contacts {
       display: none;
     }
-  }
-
-  .menu-toggle {
-    position: absolute;
-    top: 22px;
-    right: 22px;
-    border: none;
-    background: transparent;
   }
 
   .hero {
