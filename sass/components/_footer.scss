@@ -161,10 +161,13 @@
 .footer-action__input {
   width: 358px;
   height: 50px;
-  padding: 15px 295px 15px 16px;
-  @include buttons;
+  padding: 15px 16px 15px 16px;
   background: transparent;
   outline: none;
+  color: $background-main;
+  font-size: 16px;
+  border: 1px solid $email-border-color;
+  border-radius: 4px;
 }
 
 .footer-button-submit {
